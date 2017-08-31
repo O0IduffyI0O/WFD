@@ -20,13 +20,20 @@
 @import "font-awesome-sprockets";
 @import "font-awesome";
 
-body {  // Gradient provided by @_ighosh at uiGradients.com
+body, .navbar {  // Gradient provided by @_ighosh at uiGradients.com
   background: #070000;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to left, #070000, #4C0001, #070000);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to left, #070000, #4C0001, #070000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-.home-callout {
+.navbar {
+  border: none;
+  .navbar-brand {
+    font-family: 'Courgette', cursive;
+  }
+}
+
+.home-callout, {
   color: white;
   padding-top: 200px;
   padding-bottom: 200px;
