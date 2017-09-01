@@ -35,10 +35,9 @@
 }
 
 .home-callout, {
-  min-height: 100%;
+  height: 100vh;
   margin-top: -20px;
   padding-top: 200px;
-  padding-bottom: 500px;
   color: white;
   h1 {
     font-family: 'Pacifico', cursive;
@@ -46,4 +45,8 @@
   h3 {
     font-family: 'Courgette', cursive;
   }
+}
+
+.about-page {
+  font-family: 'Courgette', cursive;
 }
