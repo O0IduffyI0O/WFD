@@ -4,14 +4,15 @@
       <h1>Contact Form</h1>
       
       <div class="well">
-        <%= form_for "/contacts" do |f| %>
+        <%= flash[:notice] %>
+        <%= form_for @contact do |f| %>
           <div class="form-group">
             <%= f.label :name %>
-            <%= f.text_field :name, class: 'form-control', placeholder: 'Name' %>
+            <%= f.text_field :name, class: 'form-control' %>
           </div>
           <div class="form-group">
             <%= f.label :email %>
-            <%= f.text_field :email, class: 'form-control', placeholder: 'Email' %>
+            <%= f.text_field :email, class: 'form-control' %>
           </div>
           <div class="form-group">
             <%= f.label :comments %>
