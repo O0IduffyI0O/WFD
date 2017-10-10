@@ -47,7 +47,18 @@
   }
 }
 
-.about-page, .contact-page {
+.about-page, .contact-page, {
   font-family: 'Courgette', cursive;
   color: #4C0001;
+}
+
+.ant-page {
+  font-family: 'IM Fell Great Primer', serif;
+  h1, h3 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  p {
+    margin-top: 30px;
+  }
 }
