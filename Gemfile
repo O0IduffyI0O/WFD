@@ -21,6 +21,9 @@ gem 'font-awesome-sass', '~> 4.7.0'
 #Use Hirb for better database table display
 gem 'hirb', '0.7.3'
 
+# Use Devise for user authentication
+gem 'devise', '4.2.0'
+
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
