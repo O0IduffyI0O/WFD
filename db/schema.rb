@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20181218104348) do
+ActiveRecord::Schema.define(version: 20181218161923) do
 
   create_table "contacts", force: :cascade do |t|
     t.string   "name"
@@ -18,6 +18,22 @@ ActiveRecord::Schema.define(version: 20181218104348) do
     t.text     "comments"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "ingredients", force: :cascade do |t|
+    t.string "name"
+    t.float  "price"
+    t.float  "quantity"
+  end
+
+  create_table "meals", force: :cascade do |t|
+    t.integer  "recipie_id"
+    t.integer  "ingredient_id"
+    t.datetime "meal_date"
+    t.datetime "created_at",    null: false
+    t.datetime "updated_at",    null: false
+    t.index ["ingredient_id"], name: "index_meals_on_ingredient_id"
+    t.index ["recipie_id"], name: "index_meals_on_recipie_id"
   end
 
   create_table "profiles", force: :cascade do |t|
@@ -36,6 +52,14 @@ ActiveRecord::Schema.define(version: 20181218104348) do
   create_table "recipes", force: :cascade do |t|
     t.string   "name"
     t.text     "description"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+  end
+
+  create_table "recipies", force: :cascade do |t|
+    t.string   "name"
+    t.string   "description"
+    t.text     "method"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
   end

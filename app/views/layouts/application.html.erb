@@ -36,12 +36,12 @@
             <ul class="dropdown-menu">
               <% if user_signed_in? %>
                 <li><%= link_to "Log Out", destroy_user_session_path, method: :delete %></li>
+                <li role="separator" class="divider"></li>
+                <li><%= link_to "View Profile", user_path(id: current_user.id) %></li>
               <% else %>
                 <li><%= link_to "Log In", new_user_session_path %></li>
                 <li><%= link_to "Sign Up", new_user_registration_path %></li>
               <% end %>
-              <li role="separator" class="divider"></li>
-              <li><a href="#">Separated link</a></li>
             </ul>
           </li>
         </ul>
