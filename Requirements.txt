@@ -10,5 +10,5 @@ Recipies
 * Each recipy owned by user
 * Follow users to follow recipies
 * Verified recipies (everyone sees)
-* Own recipies section
-* Each user behind wall - has to actively share recipies (keep grandma's cookies safe)
+* Own/Favourite recipies section
+* Each user's recipies behind wall - has to actively share recipies (keep grandma's cookies safe)
