@@ -5,6 +5,8 @@ Rails.application.routes.draw do
     resource :profile
   end
   
+  resources :recipies
+  
   root to: 'pages#home'
   get 'about', to: 'pages#about'
   get 'antarctica', to: 'pages#antarctica'

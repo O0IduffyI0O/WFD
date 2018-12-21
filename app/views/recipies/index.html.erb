@@ -1,0 +1,8 @@
+<h1>List of Recipies</h1>
+
+<% Recipy.all.each do |recipy| %>
+  <tr>
+    <td><%= link_to "#{ recipy[:name] }", recipy_path(id: recipy[:id] ) %></td>
+  </tr>
+<% end %>
+
