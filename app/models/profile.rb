@@ -4,5 +4,5 @@ class Profile < ActiveRecord::Base
                     # the following are paperclip specific, need updating for activestorage
                     # :styles => { :medium => "300x300>", :thumb => "100x100>" },
                     # :default_url => "/images/:style/missing.png"
-  validates_acceptance_of :avatar, :content_type => /\Aimage\/.*\Z/
+  # validates_acceptance_of :avatar, :content_type => /\Aimage\/.*\Z/
 end
