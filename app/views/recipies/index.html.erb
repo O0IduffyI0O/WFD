@@ -1,19 +1,17 @@
 <h1>List of Recipies</h1>
 
-<% Recipy.all.each_slice(3) do |recipies| %>
-    <div class="row">
-      <% recipies.each do |recipy| %>
-        <div class="col-md-4">
-          <div class="card" style="width: 18rem;">
-            <img src="..." class="card-img-top" alt="..."
-            <div class="card-body">
-              <h5 class"card-title"><%= recipy.name %></h5>
-              <h6 class="card-subtitle mb-2 text-muted">Subheading</h6>
-              <p class="card-text"><%= recipy.description %></p>
-              <%= link_to "View", recipy_path(recipy), class: "btn btn-primary" %>
-            </div>
-          </div>
+<div class="container">
+  <div class="card-columns">
+    <% Recipy.all.each do |recipy| %>
+      <div class="card">
+        <%= image_tag recipy.avatar, class: 'card-img-top' %>
+        <div class="card-body">
+          <h5 class"card-title"><%= recipy.name %></h5>
+          <h6 class="card-subtitle mb-2 text-muted">Subheading</h6>
+          <p class="card-text"><%= recipy.description %></p>
+          <%= link_to "View", recipy_path(recipy), class: "btn btn-primary" %>
         </div>
-      <% end %>
-    </div>
-  <% end %>
+      </div>
+    <% end %>
+  </div>
+</div>

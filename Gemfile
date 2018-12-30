@@ -25,6 +25,8 @@ gem 'bootsnap', '>= 1.1.0', require: false
 gem 'font-awesome-sass', '~> 4.7.0'
 #Use Hirb for better database table display
 gem 'hirb', '0.7.3'
+# Used for ActiveStorage::Variant
+gem 'mini_magick'
 
 # Use Devise for user authentication
 gem 'devise', '4.5.0'
