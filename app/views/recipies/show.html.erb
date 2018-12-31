@@ -1,1 +1,14 @@
-<h1><%= @recipy[:name] %></h1>
+<div class="recipy-page" style="height:100vh">
+  <div class="container" style="padding-top:30px">
+    <header class="recipy-header">
+      <div class="media">
+        <%= image_tag @recipy.avatar, class: 'mr-3 recipy-show-image' %>
+        <div class="media-body">
+          <h3 class="mt-0"><%= @recipy.name %></h3>
+          <h5><%= link_to "Save", "#", class: "btn btn-primary" %></h5>
+          <%= @recipy.description %>
+        </div>
+      </div>
+    </header>
+  </div>
+</div>
