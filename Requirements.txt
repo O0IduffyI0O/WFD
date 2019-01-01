@@ -12,3 +12,8 @@ Recipies
 * Verified recipies (everyone sees)
 * Own/Favourite recipies section
 * Each user's recipies behind wall - has to actively share recipies (keep grandma's cookies safe)
+* Recipy tags e.g. vegitarian/healthy/chicken/feel good food/etc...
+
+Profile - User View
+* Dashboard shows stats for the day/week (e.g. calories consumed etc...)
+* Section for "My Recipies"
