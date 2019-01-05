@@ -1,11 +1,3 @@
-User Profiles
-* Each user should have one profile
-* User should see link to new profile form upon signing upon
-* User should be able to create and view their user profile
-* User should have a profile picture
-* User should be able to view all user profiles
-
-
 Recipies
 * Each recipy owned by user
 * Follow users to follow recipies
@@ -17,3 +9,9 @@ Recipies
 Profile - User View
 * Dashboard shows stats for the day/week (e.g. calories consumed etc...)
 * Section for "My Recipies"
+
+For Tommorrow
+* Recipy belongs to user who made it
+* Recipy can be saved by any user
+* Recipy has many ingredients
+* Ingredient has many recipies
