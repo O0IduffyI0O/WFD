@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '2.6.0'
+ruby '2.6.3'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
@@ -54,7 +54,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 group :development, :test do
   # Use sqlite3 as the database for Active Record
-  gem 'sqlite3'
+  gem 'sqlite3', '~>1.3.6'
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
 end
