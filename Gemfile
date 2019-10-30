@@ -22,7 +22,7 @@ gem 'font-awesome-sass', '~> 4.7.0'
 gem 'hirb', '0.7.3'
 
 # Use Devise for user authentication
-gem 'devise', '4.2.0'
+gem 'devise', '4.7.1'
 
 # Use Paperclip for image upload
 gem 'paperclip', '4.3.6'
